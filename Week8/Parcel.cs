@@ -3,8 +3,11 @@ namespace Week8;
 public class Parcel : DeliveryItem
 {
     private string Dimensions;
-        
-    public Parcel(string Number, double Weight, string Dimensions) : base(Number, Weight) { }
+    
+    public Parcel(string Number, double Weight, string dimensions) : base(Number, Weight)
+    {
+        Dimensions = dimensions;
+    }
 
     public override double CalculateCost()
     {
